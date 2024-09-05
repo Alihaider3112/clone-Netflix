@@ -1,0 +1,151 @@
+.login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/background_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.login-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px; 
+    cursor: pointer;
+}
+
+.login-form {
+    width: 90%; 
+    max-width: 380px; 
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    padding: 40px 30px; 
+    margin: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.login-form h1 {
+    font-size: 28px; 
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.login-form input {
+    width: 100%;
+    height: 40px;
+    background: #333;
+    color: #fff;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 15px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+    border: 1px solid #555;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.login-form input::placeholder {
+    font-size: 15px;
+    color: #bbb;
+}
+
+.login-form button {
+    width: 100%;
+    height: 45px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #f40612;
+}
+
+.form-help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.form-help .remember {
+    display: flex;
+    align-items: center;
+    font-size: 14px; 
+}
+
+.form-help input[type="checkbox"] {
+    width: 16px; 
+    height: 16px; 
+    margin-right: 8px; 
+    accent-color: #e50914; 
+}
+
+/* Style for the label */
+.form-help label {
+    font-size: 14px; 
+    color: #bbb; 
+}
+.form-switch {
+    margin-top: 20px; 
+    font-size: 14px; 
+    color: #bbb; 
+    text-align: left; 
+    max-width: 500px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.form-switch p {
+    margin: 10px 0;
+    color: #888; 
+}
+
+.form-switch span {
+    color: #e50914; 
+    font-weight: 400;
+    cursor: pointer; 
+}
+
+.form-switch a {
+    color: #e50914; 
+    text-decoration: none; 
+    font-weight: 600;
+}
+
+.form-switch a:hover,
+.form-switch span:hover {
+    text-decoration: underline; 
+}
+@media (max-width:500px) {
+    .login{
+        padding: 15px 5px;
+    }
+    .login-form{
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+}
