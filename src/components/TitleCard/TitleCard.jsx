@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './TitleCard.css';
 import { Link } from 'react-router-dom';
 
+
 const TitleCard = ({ title, category }) => {
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>",category)
   const [apiData, setApiData] = useState([]);
@@ -11,7 +12,7 @@ const TitleCard = ({ title, category }) => {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjZWE2MjZiYTczMDljY2FjZDQwODIyMTdmYzEwMWZhYSIsIm5iZiI6MTcyNDk5ODU1OS40MzYyNjEsInN1YiI6IjY2ZDE2MDUxY2IzZWQ5Y2E4ZGMwYjk1YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.c53NxnWNp2FYRy7nueljRWidO11lTogGhlzkCrPCUeY' // Replace with your actual API key
+      Authorization: `Bearer ${import.meta.env.VITE_API_TOKEN}`
     },
   };
 

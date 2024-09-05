@@ -19,7 +19,7 @@ function Player() {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjZWE2MjZiYTczMDljY2FjZDQwODIyMTdmYzEwMWZhYSIsIm5iZiI6MTcyNDk5ODU1OS40MzYyNjEsInN1YiI6IjY2ZDE2MDUxY2IzZWQ5Y2E4ZGMwYjk1YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.c53NxnWNp2FYRy7nueljRWidO11lTogGhlzkCrPCUeY'
+      Authorization: `Bearer ${import.meta.env.VITE_API_TOKEN2}`
     } 
   };
 
